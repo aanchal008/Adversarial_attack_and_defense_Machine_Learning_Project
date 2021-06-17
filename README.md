@@ -8,11 +8,15 @@ x_{adversarial} = x + epsilon*sign(cost function)
 
 We  multiply  the  small  value to  the  signed  gradient  toensure that the perturbations are small enough that humaneye cannot detect them but large enough that they can foolthe network.The formulae is related to the gradient of thecost function just to increase the model error.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 Projected Gradient Descent
 
 This is also know as Iterative Fast gradient sign method(I-FGSM). The key to understand PGD attack is frame findingan adversarial example as constrained optimization.  It at-tempts to find the perturbation that maximizes the loss ofa model on a particular input, while keeping the size ofthe perturbation smaller than a specified amount which is epsilon.
 
 The idea here to find the adversarial example is to maximizeover the set of images that are very close to x maximizing the cross entropy loss of our neural network evaluated atthe perturbed network with respect to the true label. Here,maximizing the cross entropy loss means fooling the neuralnetwork.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 Defense Distillation
 
