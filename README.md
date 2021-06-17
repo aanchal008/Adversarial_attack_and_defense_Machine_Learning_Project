@@ -26,3 +26,5 @@ The algorithm successfully works and protect against theattack. The biggest adva
 
 The defense techniques that perform the gradient maskingresult in a model which is smooth in specific directions andneighbourhood of the training points. This makes it harderfor the adversary to find the gradient direction to perturb theinput in harmful way for the model.
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Taken help from repositary : https://github.com/as791/Adversarial-Example-Attack-and-Defense
